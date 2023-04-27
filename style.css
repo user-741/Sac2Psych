@@ -1,7 +1,7 @@
-* Card styles */
+/* Card styles */
 
 body {
-    background-color: #f2f2f2;
+    background-color: black;
   }
 
 .card {
@@ -24,8 +24,9 @@ body {
 }
 
 .card-answer {
-  color: gray;
+  color: black;
   display: none;
+  font-size: 50px;
 }
 
 .card-buttons {
@@ -44,10 +45,16 @@ body {
   padding: 8px;
   text-align: center;
   width: 100px;
+  transition: background-color 0.2s ease-out;
 }
 
 .card-buttons button:hover {
   background-color: #555;
+}
+
+.card-buttons button:active {
+  background-color: #777;
+  transition: none;
 }
 
 /* Animation styles */
@@ -76,4 +83,70 @@ body {
   100% {
     transform: translateX(100%);
   }
+}
+
+/* HTML body styles */
+
+body {
+  background-color: #222;
+}
+
+/* Card styles */
+
+.card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  overflow: hidden;
+  text-align: center;
+  color: black;
+}
+
+.card-question {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-answer {
+  color: black;
+  display: none;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-buttons button {
+  background-color: gray;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+  transition: background-color 0.2s ease-out;
+}
+
+.card-buttons button:hover {
+  background-color: black;
+}
+
+.card-buttons button:active,
+.card-buttons button.active {
+  background-color: black;
+  transition: none;
+}
+
+.card-counts {
+  font-size: 12px;
+  margin-top: 10px;
 }
